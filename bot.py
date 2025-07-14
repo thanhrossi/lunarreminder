@@ -24,6 +24,7 @@ def run():
     is_today_special, lunar_day = is_lunar_1_or_15(today)
     if is_today_special and now.hour < 8:
         bot.send_message(chat_id=CHAT_ID, text=f"🌕 Hôm nay là mùng {lunar_day} âm lịch!")
+    else bot.send_message(chat_id=CHAT_ID, text=f"🌕 Hôm nay là ngày bt!")
 
 if __name__ == "__main__":
     run()
